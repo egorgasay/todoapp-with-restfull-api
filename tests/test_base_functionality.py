@@ -3,7 +3,7 @@ import requests
 
 def test_base_functionality():
     # CREATE new test record (POST)
-    test_headers = {"title" : "a1", "description" : "a1", "date" : "a1"}
+    test_headers = {"title" : "a1", "description" : "a1", "date" : "2077-04-23"}
     response = requests.post("http://localhost:8000/create/", json=test_headers)
     assert response.ok, "Error when trying to create a new record"
     # GET all records (GET)
