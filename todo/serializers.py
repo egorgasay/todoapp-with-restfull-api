@@ -8,7 +8,7 @@ class TodoSerializer(serializers.ModelSerializer): # in documentation
     
     class Meta:
         model = Todo
-        fields = '__all__'
+        fields = ('title', 'description', 'date', 'done')
 
 
 class TodoSerializer2(serializers.ModelSerializer): # in documentation
