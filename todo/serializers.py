@@ -16,3 +16,10 @@ class TodoSerializer2(serializers.ModelSerializer): # in documentation
     class Meta:
         model = Todo
         fields = ('done', )
+
+
+class TodoSerializerIdOnly(serializers.ModelSerializer): # in documentation
+    
+    class Meta:
+        model = Todo
+        fields = ('id', )
