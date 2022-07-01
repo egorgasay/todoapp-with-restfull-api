@@ -10,16 +10,6 @@ class TodoSerializer(serializers.ModelSerializer): # in documentation
         model = Todo
         fields = '__all__'
 
-class TodoListSerializer(serializers.ModelSerializer): # in documentation
-    
-    class Meta:
-        model = Todo
-        fields = '__all__'
-        
-class TaskSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Todo
-        fields = '__all__'
 
 class TodoSerializer2(serializers.ModelSerializer): # in documentation
     

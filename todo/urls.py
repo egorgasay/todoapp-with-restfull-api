@@ -12,6 +12,6 @@ urlpatterns = [
     path('create/', TodoCreateView.as_view()),
     path('tasks/all', TodoListView.as_view()),
     path('delete/<int:pk>/', DestroyView.as_view()),
-    path('change_status/<int:pk>/', UpdateView.as_view())
+    path('change-status/<int:pk>/', UpdateView.as_view())
 ]
 # path('all-tasks/', TodoListView.as_view()),
