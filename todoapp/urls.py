@@ -16,7 +16,11 @@ Including another URLconf
 
 from django.urls import path, include
 from django.contrib import admin
+from todo.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('todo.urls'))
 ]
+
+handler404 = pageNotFound

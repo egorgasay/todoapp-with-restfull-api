@@ -1,3 +1,4 @@
+from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseNotFound
 from django.shortcuts import render
 from rest_framework import viewsets, generics
 from .serializers import *
@@ -33,3 +34,6 @@ class DestroyView(generics.DestroyAPIView):
 class UpdateView(generics.UpdateAPIView): 
     serializer_class = TodoSerializer2
     queryset = Todo.objects.all()
+
+def pageNotFound(request, exception):
+    return HttpResponseNotFound("<h1>Page Not Found<h1>")
