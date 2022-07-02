@@ -25,3 +25,5 @@ python3 manage.py migrate
 
 python3 manage.py runserver
 ```
+### Для более приятного внешнего вида сайта:  
+```python3 manage.py runserver --insecure```
