@@ -19,11 +19,16 @@ git clone https://github.com/egorgasay/todoapp-with-restfull-api
 
 cd todoapp-with-restfull-api
 
-python3 -m pip install -r requirements.txt
-
-python3 manage.py migrate
-
-python3 manage.py runserver
+bash install.sh
+Далее выбор между обычной установкой и с испольсзованием docker
 ```
+## Запуск при обычной установке:
+```
+python3 manage.py runserver
+```  
+## Запуск при установке через docker:
+```
+docker-compose up -d
+```  
 ### Для более приятного внешнего вида сайта:  
 ```python3 manage.py runserver --insecure```
