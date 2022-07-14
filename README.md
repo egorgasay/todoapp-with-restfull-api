@@ -20,7 +20,7 @@ git clone https://github.com/egorgasay/todoapp-with-restfull-api
 cd todoapp-with-restfull-api
 
 bash install.sh
-Далее выбор между обычной установкой и с испольсзованием docker
+Далее выбор между обычной установкой и с использованием docker
 ```
 ## Запуск при обычной установке:
 ```
